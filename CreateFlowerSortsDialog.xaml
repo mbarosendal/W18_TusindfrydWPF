@@ -1,0 +1,25 @@
+﻿<Window x:Class="TusindfrydWPF.CreateFlowerSortsDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TusindfrydWPF"
+        mc:Ignorable="d"
+        Title="CreateFlowerSortsDialog" Height="400" Width="400">
+    <Grid>
+        <Label Name="lblNavn" Content="Navn:" HorizontalAlignment="Left" Margin="36,23,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblBillede" Content="Billede (sti):" HorizontalAlignment="Left" Margin="36,60,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblProdtid" Content="Produktionstid:" HorizontalAlignment="Left" Margin="36,206,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblHalvtid" Content="Halveringstid:" HorizontalAlignment="Left" Margin="36,248,0,0" VerticalAlignment="Top"/>
+        <Label Name="lblStørrelse" Content="Størrelse:" HorizontalAlignment="Left" Margin="36,291,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtNavn" HorizontalAlignment="Left" Margin="137,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" TextChanged="txt_TextChanged"/>
+        <TextBox Name="txtBillede" Text="https://m.media-amazon.com/images/I/51y8GUVKJoL.jpg" HorizontalAlignment="Left" Margin="137,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" TextChanged="txt_TextChanged"/>
+        <TextBox Name="txtProdtid" HorizontalAlignment="Left" Margin="137,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" TextChanged="txt_TextChanged"/>
+        <TextBox Name="txtHalvtid" HorizontalAlignment="Left" Margin="137,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" TextChanged="txt_TextChanged"/>
+        <TextBox Name="txtStørrelse" HorizontalAlignment="Left" Margin="137,295,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226" TextChanged="txt_TextChanged"/>
+        <Image Name="imgBillede" Source="{Binding Text, ElementName=txtBillede}" HorizontalAlignment="Left" Height="100" Margin="139,97,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="250,333,0,0" VerticalAlignment="Top" Width="40" Click="btnOK_Click"/>
+        <Button Name="btnFortryd" Content="Fortryd" HorizontalAlignment="Left" Margin="305,333,0,0" VerticalAlignment="Top" Width="50" Click="btnFortryd_Click"/>
+        <Label Name="lblMessage" Content="" HorizontalAlignment="Left" Margin="100,330,0,0" VerticalAlignment="Top" Width="150" Foreground="Red"/>
+    </Grid>
+</Window>
